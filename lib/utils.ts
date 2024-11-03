@@ -12,7 +12,7 @@ export const calculateStats = (data: TemperatureData[]) => {
     average: temperatures.reduce((a, b) => a + b, 0) / temperatures.length,
     max: Math.max(...temperatures),
     min: Math.min(...temperatures),
-    difference: temperatures[temperatures.length - 1] - temperatures[0],
+    difference: temperatures[0] - temperatures[1],
   };
 };
 
