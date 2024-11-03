@@ -1,3 +1,4 @@
+import { TIMEZONES } from "@/constant/timezone";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -15,16 +16,12 @@ export const calculateStats = (data: TemperatureData[]) => {
   };
 };
 
-const timezones = {
-  UTC: "UTC",
-  Indonesia: "Asia/Jakarta",
-  Australia: "Australia/Sydney",
-  Singapore: "Asia/Singapore",
-};
-
-export const formatDate = (timestamp: number, timeZone: Timezone = "UTC") => {
+export const formatDate = (
+  timestamp: number,
+  timeZone: Timezone = "Singapore"
+) => {
   return new Date(timestamp).toLocaleString("en-US", {
-    timeZone: timezones[timeZone],
+    timeZone: TIMEZONES[timeZone],
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
