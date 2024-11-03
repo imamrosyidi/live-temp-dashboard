@@ -38,7 +38,7 @@ const TemperatureChart = ({ data }: TemperatureChartProps) => {
               />
               <YAxis
                 className="hidden md:block"
-                domain={[0, "dataMax + 10"]}
+                domain={[0, "dataMax + 5"]}
                 label={{
                   value: "Temperature (°C)",
                   angle: -90,
