@@ -6,11 +6,11 @@ import { ChevronRight, ChevronLeft } from "lucide-react";
 import { Button } from "./ui/button";
 import { usePathname, useRouter } from "next/navigation";
 import { NAVIGATION_ITEMS } from "@/constant/navigation";
-import { useMediaQuery } from "@uidotdev/usehooks";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 function Sidebar() {
-  const isMobile = useMediaQuery("only screen and (max-width : 768px)");
-  const [isCollapsed, setIsCollapsed] = useState(isMobile);
+  const isMobile = useMediaQuery("(max-width : 768px)");
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const router = useRouter();
   const pathname = usePathname();
   const collapse = () => {
