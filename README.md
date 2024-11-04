@@ -2,7 +2,7 @@
 
 A real-time temperature monitoring application that displays live temperature data across multiple timezones. This dashboard is built to be scalable, maintainable, and follows clean code principles, providing a streamlined user experience with an organized code structure.
 
-- **API Endpoint**: [https://temp-api.rosyidi.work/data/temperatures](https://temp-api.rosyidi.work/data/temperatures)
+- **API Endpoint**: [https://temp-api.rosyidi.work/data/temperatures](https://temp-api.rosyidi.work/api/temperatures)
 - **Live Demo**: [http://live-temp-dashboard.vercel.app](http://live-temp-dashboard.vercel.app)
 
 ---
