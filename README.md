@@ -131,11 +131,11 @@ Follow these steps to set up and run the Live Temperature Dashboard locally:
 
 1. **Clone the Repository**: Clone the project to your local machine.
    ```bash
-   git clone https://github.com/your-username/live-temperature-dashboard.git
+   git clone https://github.com/imamrosyidi/live-temp-dashboard.git
    ```
 2. **Install Dependencies**: Navigate to the project directory and install the required dependencies.
    ```bash
-    cd live-temperature-dashboard
+    cd live-temp-dashboard
     npm install
    ```
 3. **Run the Application**: Start the development server to run the application locally.
